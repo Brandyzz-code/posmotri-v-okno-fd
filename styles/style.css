@@ -69,6 +69,7 @@ display: flex;
 align-items: end;
 gap: 30px;
 inline-size: 1140px;
+height: 534px;
 }
 
 .result__video-container {
@@ -170,13 +171,13 @@ block-size: 386px;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
-  font-size: 700;
+  font-weight: 700;
   background-color: transparent;
   cursor: pointer;
 }
 
 .button:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .button:active {
@@ -191,7 +192,7 @@ block-size: 386px;
   outline: 1px solid #fff;
 }
 
-.search-from__submit-button {
+.search-form__submit-button {
   align-self: end;
   inline-size: 194px;
 
@@ -223,7 +224,7 @@ block-size: 386px;
  display: flex;
  flex-direction: column;
  gap: 30px;
- height: 298px;
+ block-size: 298px;
  overflow: auto;
 }
 
