@@ -128,6 +128,7 @@ block-size: 386px;
   font-size: inherit;
   background-color: transparent;
   appearance: none;
+  color: #fff;
 }
 
 .search-form__textfield::placeholder {
@@ -143,9 +144,42 @@ block-size: 386px;
   gap: 15px;
 }
 
+.search-form__pseudo-checkbox {
+ inline-size: 19px;
+ block-size: 19px;
+  border: 1px solid #fff;
+  padding: 1px;
+}
+
+.search-form__pseudo-checkbox::after {
+  content: '';
+  display: block;
+  inline-size: 100%;
+  block-size: 100%;
+  background-color: #fff;
+  opacity: 0;
+}
+
+.search-form__checkbox:checked ~ .search-form__pseudo-checkbox::after {
+  opacity: 1;
+}
+
+.button {
+  height: 34px;
+  background-color: transparent;
+  font-size: 700;
+  cursor: pointer;
+}
+
+.search-from__submit-button {
+  align-self: end;
+  width: 194px;
+
+}
+
 .content__details {
   display: flex;
-  flex-direction: none;
+  flex-direction: column;
   justify-content: space-between;
   gap: 26px;
   inline-size: 100%;
