@@ -98,8 +98,8 @@ block-size: 386px;
 .search-form__fieldset-title {
  margin-block-end: 5px;
  font-family: 'Fira Sans Condensed', sans-serif;
- font-size: 18px;
  font-weight: 400;
+ font-size: 18px;
 }
 
 .search-form__label {
@@ -112,6 +112,15 @@ block-size: 386px;
 
 .search-form__label:hover .search-form__label-text {
   text-decoration: underline;
+}
+
+.search-form__label:has(:focus-visible) {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+}
+
+.search-form__textfield::placeholder {
+  color: rgb(255 255 255 / 0.7);
 }
 
 .content__details {
