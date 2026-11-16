@@ -179,9 +179,21 @@ block-size: 386px;
   text-decoration: none;
 }
 
+.button:active {
+  background-color: #fff;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  outline: 1px solid #fff;
+}
+
 .search-from__submit-button {
   align-self: end;
-  width: 194px;
+  inline-size: 194px;
 
 }
 
