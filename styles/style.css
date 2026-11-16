@@ -114,6 +114,11 @@ block-size: 386px;
   text-decoration: underline;
 }
 
+.search-form__label:has(:focus-visible) {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+}
+
 .search-form__textfield {
   inline-size: 225px;
   border: none;
@@ -122,15 +127,15 @@ block-size: 386px;
   font-family: inherit;
   font-size: inherit;
   background-color: transparent;
-}
-
-.search-form__label:has(:focus-visible) {
-  outline: 1px solid #fff;
-  outline-offset: 1px;
+  appearance: none;
 }
 
 .search-form__textfield::placeholder {
   color: rgb(255 255 255 / 0.7);
+}
+
+.search-form__textfield:focus {
+  outline: none;
 }
 
 .content__details {
