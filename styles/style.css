@@ -165,10 +165,18 @@ block-size: 386px;
 }
 
 .button {
-  height: 34px;
-  background-color: transparent;
+  block-size: 34px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
   font-size: 700;
+  background-color: transparent;
   cursor: pointer;
+}
+
+.button:hover {
+  text-decoration: none;
 }
 
 .search-from__submit-button {
