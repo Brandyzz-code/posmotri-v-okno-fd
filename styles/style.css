@@ -248,7 +248,7 @@ ol {
 }
 
 .content__card-link:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .content__card-link:focus {
